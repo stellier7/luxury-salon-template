@@ -6,7 +6,7 @@ A single-page, config-driven website template for high-end salons, nail spas, an
 
 **On a phone or tablet (no terminal needed):** open this live preview link in Safari or Chrome:
 
-[Preview MAISON VELA](https://htmlpreview.github.io/?https://raw.githubusercontent.com/stellier7/luxury-salon-template/cursor/luxury-salon-template-b55a/index.html)
+[Preview MAISON VELA](https://htmlpreview.github.io/?https://raw.githubusercontent.com/stellier7/luxury-salon-template/main/index.html)
 
 Or browse the files on the pull request: [PR #1](https://github.com/stellier7/luxury-salon-template/pull/1)
 
