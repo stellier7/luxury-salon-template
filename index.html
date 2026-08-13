@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="MAISON VELA — A private beauty house for hair, nails, and skin.">
-<title>MAISON VELA — Hair, Nails & Skin</title>
+<meta name="description" content="MAISON VELA — Una casa de belleza privada para cabello, uñas y piel.">
+<title>MAISON VELA — Cabello, Uñas y Piel</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,14 +12,14 @@
 <nav class="nav" id="nav">
   <div class="nav-logo" id="navLogo"></div>
   <div class="nav-links" id="navLinks">
-    <a href="#services">Services</a>
-    <a href="#ritual">Experience</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#visit">Visit</a>
+    <a href="#services" id="navServices"></a>
+    <a href="#ritual" id="navExperience"></a>
+    <a href="#gallery" id="navGallery"></a>
+    <a href="#visit" id="navVisit"></a>
   </div>
   <div class="nav-actions">
-    <a href="#" class="nav-cta" id="navCta">Book Now</a>
-    <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+    <a href="#" class="nav-cta" id="navCta"></a>
+    <button class="nav-burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
       <span></span>
       <span></span>
     </button>
@@ -34,19 +34,19 @@
     <h1 class="hero-title" id="heroTitle"></h1>
     <p class="hero-sub" id="heroSub"></p>
     <div class="hero-actions">
-      <a href="#" class="btn btn-primary" id="heroCta">Book on WhatsApp</a>
-      <a href="#services" class="btn btn-ghost">View Services</a>
+      <a href="#" class="btn btn-primary" id="heroCta"></a>
+      <a href="#services" class="btn btn-ghost" id="heroSecondary"></a>
     </div>
   </div>
-  <div class="hero-scroll"><div class="hero-scroll-line"></div>Scroll</div>
+  <div class="hero-scroll"><div class="hero-scroll-line"></div><span id="heroScroll"></span></div>
 </section>
 
 <!-- SERVICES -->
 <section class="section" id="services">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">What We Do</span>
-      <h2 class="section-title">Three rooms, one standard.</h2>
+      <span class="eyebrow" id="servicesEyebrow"></span>
+      <h2 class="section-title" id="servicesTitle"></h2>
     </div>
   </div>
   <div class="services-grid" id="servicesGrid"></div>
@@ -56,8 +56,8 @@
 <section class="ritual" id="ritual">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">The Experience</span>
-      <h2 class="section-title" style="color:var(--ivory)">Every visit, the same ritual.</h2>
+      <span class="eyebrow" id="ritualEyebrow"></span>
+      <h2 class="section-title" style="color:var(--ivory)" id="ritualTitle"></h2>
     </div>
   </div>
   <div class="ritual-track" id="ritualTrack"></div>
@@ -67,8 +67,8 @@
 <section class="section" id="gallery">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">Inside the House</span>
-      <h2 class="section-title">A room built for slowing down.</h2>
+      <span class="eyebrow" id="galleryEyebrow"></span>
+      <h2 class="section-title" id="galleryTitle"></h2>
     </div>
     <div class="gallery-grid" id="galleryGrid"></div>
   </div>
@@ -78,8 +78,8 @@
 <section class="section section-dark">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">Word of Mouth</span>
-      <h2 class="section-title" style="color:var(--ivory)">What clients keep saying.</h2>
+      <span class="eyebrow" id="testimonialsEyebrow"></span>
+      <h2 class="section-title" style="color:var(--ivory)" id="testimonialsTitle"></h2>
     </div>
     <div class="testi-track" id="testiTrack"></div>
   </div>
@@ -90,13 +90,13 @@
   <div class="container">
     <div class="location-grid">
       <div class="reveal left">
-        <span class="eyebrow" style="color:var(--rose-ember)">Find Us</span>
-        <h2 class="section-title" style="margin:16px 0 30px">Visit the house.</h2>
+        <span class="eyebrow" style="color:var(--rose-ember)" id="visitEyebrow"></span>
+        <h2 class="section-title" style="margin:16px 0 30px" id="visitTitle"></h2>
         <p id="locAddress" style="margin-bottom:28px;color:#5b4f42;font-size:15px;"></p>
         <div id="hoursList"></div>
       </div>
       <div class="location-map reveal right">
-        <img src="https://images.unsplash.com/photo-1521931961826-fe48677230a5?q=80&w=900&auto=format&fit=crop" alt="Salon interior">
+        <img id="visitImage" src="https://images.unsplash.com/photo-1521931961826-fe48677230a5?q=80&w=900&auto=format&fit=crop" alt="Interior del salón">
       </div>
     </div>
   </div>
@@ -106,9 +106,9 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-cta reveal">
-      <span class="eyebrow" style="color:var(--champagne)">Ready When You Are</span>
-      <h2 class="section-title">Book your appointment.</h2>
-      <a href="#" class="btn btn-primary" id="footerCta" style="margin-top:10px;">Message Us on WhatsApp</a>
+      <span class="eyebrow" style="color:var(--champagne)" id="footerEyebrow"></span>
+      <h2 class="section-title" id="footerTitle"></h2>
+      <a href="#" class="btn btn-primary" id="footerCta" style="margin-top:10px;"></a>
     </div>
     <div class="footer-bottom">
       <span id="footerBrand"></span>
@@ -126,9 +126,12 @@
 <script>
 (function () {
   const c = CONFIG;
+  const u = c.ui;
   const waLink = `https://wa.me/${c.whatsappNumber}?text=${encodeURIComponent(c.whatsappDefaultMessage)}`;
 
+  document.documentElement.lang = c.lang || 'es';
   document.title = `${c.brandName} — ${c.tagline}`;
+  document.querySelector('meta[name="description"]').content = u.metaDescription;
 
   // ---- Apply color tokens ----
   const root = document.documentElement.style;
@@ -136,6 +139,31 @@
     const cssVar = '--' + k.replace(/([A-Z])/g, '-$1').toLowerCase();
     root.setProperty(cssVar, v);
   });
+
+  // ---- UI strings ----
+  document.getElementById('navServices').textContent = u.navServices;
+  document.getElementById('navExperience').textContent = u.navExperience;
+  document.getElementById('navGallery').textContent = u.navGallery;
+  document.getElementById('navVisit').textContent = u.navVisit;
+  document.getElementById('navCta').textContent = u.navBook;
+  document.getElementById('heroCta').textContent = u.heroCta;
+  document.getElementById('heroSecondary').textContent = u.heroSecondary;
+  document.getElementById('heroScroll').textContent = u.heroScroll;
+  document.getElementById('servicesEyebrow').textContent = u.servicesEyebrow;
+  document.getElementById('servicesTitle').textContent = u.servicesTitle;
+  document.getElementById('ritualEyebrow').textContent = u.ritualEyebrow;
+  document.getElementById('ritualTitle').textContent = u.ritualTitle;
+  document.getElementById('galleryEyebrow').textContent = u.galleryEyebrow;
+  document.getElementById('galleryTitle').textContent = u.galleryTitle;
+  document.getElementById('testimonialsEyebrow').textContent = u.testimonialsEyebrow;
+  document.getElementById('testimonialsTitle').textContent = u.testimonialsTitle;
+  document.getElementById('visitEyebrow').textContent = u.visitEyebrow;
+  document.getElementById('visitTitle').textContent = u.visitTitle;
+  document.getElementById('visitImage').alt = u.visitImageAlt;
+  document.getElementById('footerEyebrow').textContent = u.footerEyebrow;
+  document.getElementById('footerTitle').textContent = u.footerTitle;
+  document.getElementById('footerCta').textContent = u.footerCta;
+  document.getElementById('waFloat').setAttribute('aria-label', u.whatsappLabel);
 
   // ---- Nav ----
   document.getElementById('navLogo').textContent = c.brandNameShort;
@@ -181,7 +209,7 @@
   const galleryGrid = document.getElementById('galleryGrid');
   galleryGrid.innerHTML = c.gallery.map((src, i) => `
     <div class="gallery-item reveal ${i % 3 === 0 ? 'tall' : ''}">
-      <img src="${src}" alt="Gallery image ${i + 1}" loading="lazy">
+      <img src="${src}" alt="${u.galleryImageAlt} ${i + 1}" loading="lazy">
     </div>
   `).join('');
 
@@ -220,14 +248,14 @@
   function closeNav() {
     nav.classList.remove('open');
     navBurger.setAttribute('aria-expanded', 'false');
-    navBurger.setAttribute('aria-label', 'Open menu');
+    navBurger.setAttribute('aria-label', u.openMenu);
     document.body.classList.remove('nav-open');
   }
 
   navBurger.addEventListener('click', () => {
     const isOpen = nav.classList.toggle('open');
     navBurger.setAttribute('aria-expanded', String(isOpen));
-    navBurger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    navBurger.setAttribute('aria-label', isOpen ? u.closeMenu : u.openMenu);
     document.body.classList.toggle('nav-open', isOpen);
   });
 
