@@ -4,13 +4,13 @@ A single-page, config-driven website template for high-end salons, nail spas, an
 
 ## Quick start
 
-Open `index.html` in a browser, or serve locally:
+**On a phone or tablet (no terminal needed):** open this live preview link in Safari or Chrome:
 
-```bash
-python3 -m http.server 8080
-```
+[Preview MAISON VELA](https://htmlpreview.github.io/?https://raw.githubusercontent.com/stellier7/luxury-salon-template/cursor/luxury-salon-template-b55a/index.html)
 
-Then visit [http://localhost:8080](http://localhost:8080).
+Or browse the files on the pull request: [PR #1](https://github.com/stellier7/luxury-salon-template/pull/1)
+
+**On desktop:** open `index.html` directly in any browser — no build step required.
 
 ## Customize for a client
 
