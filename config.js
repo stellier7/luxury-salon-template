@@ -30,17 +30,20 @@ const CONFIG = {
   instagramHandle: "@maisonvela",
   instagramUrl: "https://instagram.com",
 
-  // ---- Colores (edita solo los valores hex) ----
+  // ---- Colores (estudio monocromo — edita solo los valores) ----
   colors: {
-    noir: "#12100D",
-    noirSoft: "#1C1812",
-    champagne: "#C9A66B",
-    champagneSoft: "#E4D2AC",
-    ivory: "#F6F1E9",
-    ivorySoft: "#EFE7D8",
-    umber: "#2A2018",
-    roseEmber: "#B9694E",
-    smoke: "#948C7F",
+    cream: "#000000",
+    cream2: "#0A0A0A",
+    ink: "#FFFFFF",
+    inkSoft: "#A8A8A8",
+    inkFaint: "#666666",
+    accent: "#FFFFFF",
+    accentInv: "#000000",
+    accentHover: "rgba(255,255,255,0.10)",
+    gray: "#1A1A1A",
+    grayLight: "#111111",
+    line: "rgba(255,255,255,0.14)",
+    lineStrong: "rgba(255,255,255,0.28)",
   },
 
   // ---- Servicios ----
@@ -101,7 +104,7 @@ const CONFIG = {
     "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?q=80&w=900&auto=format&fit=crop",
     "https://images.unsplash.com/photo-1600948836101-f9ffda59d250?q=80&w=900&auto=format&fit=crop",
     "https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?q=80&w=900&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1522337094846-8a8195aca3aa?q=80&w=900&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=900&auto=format&fit=crop",
     "https://images.unsplash.com/photo-1470259078422-826894b933aa?q=80&w=900&auto=format&fit=crop",
     "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=900&auto=format&fit=crop",
   ],
@@ -113,9 +116,11 @@ const CONFIG = {
     { quote: "Se siente como un spa de hotel, no un salón de strip mall.", name: "Carolina V." },
   ],
 
-  // ---- Fondo del hero ----
+  // ---- Imágenes de ambiente ----
   heroImage:
     "https://images.unsplash.com/photo-1522336572468-97b06e8ef143?q=80&w=1800&auto=format&fit=crop",
+  visitImage:
+    "https://images.unsplash.com/photo-1521931961826-fe48677230a5?q=80&w=1400&auto=format&fit=crop",
 
   // ---- Textos de interfaz ----
   ui: {
@@ -146,5 +151,13 @@ const CONFIG = {
     footerTitle: "Reserva tu cita.",
     footerCta: "Escríbenos por WhatsApp",
     whatsappLabel: "WhatsApp",
+    metaSpecialty: "Especialidad",
+    metaHours: "Horario",
+    metaContact: "Contacto directo",
+    gallerySoon: "Foto próximamente",
+    lightboxLabel: "Vista previa de galería",
+    lightboxClose: "Cerrar",
+    lightboxPrev: "Anterior",
+    lightboxNext: "Siguiente",
   },
 };
